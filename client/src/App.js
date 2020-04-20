@@ -35,7 +35,7 @@ function App() {
           : <Spinner color="warning" />
           }
           {!usersMounted ? <div></div>
-          : usersMounted.map(user =>{
+          : users.map(user =>{
             return <h2>{user.username}</h2>
           })
           }
