@@ -5,6 +5,7 @@ const Users = require('../users/user-model');
 
 router.post('/register', (req, res) =>{
     let user = req.body;
+    
     // add rounds .env if time (matters in production)
     const lockdown = bcrypt.hashSync(user.password, 8);
     user.password = lockdown;
