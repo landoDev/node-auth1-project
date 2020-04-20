@@ -11,7 +11,7 @@ function find(){
 };
 
 function findBy(param){
-    return db('users').where(param).first();
+    return db('users').where(param);
 };
 
 async function add(user){
