@@ -25,6 +25,7 @@ router.post('/login', (req, res) =>{
     Users.findBy({ username })
     .then(user =>{
         if(user && bcrypt.compareSync(password, user[0].password)){
+            req.session.loggedIn = true
             res.status(200).json({ message: `Welcome, ${username}`});
         } else {
             res.status(401).status({ message: 'UNAUTHORIZED'});
