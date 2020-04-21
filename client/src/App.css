@@ -1,0 +1,33 @@
+.App-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #b2b3b7;
+  width: 100%;
+  height: 10vh; 
+  border-bottom: 2.5px solid #000000;
+}
+
+.navigation{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1% 2.5%;
+}
+
+a {
+  margin: 0 5%;
+  padding: .5%;
+  background-color: white;
+  color: #991b1e;
+  border-radius:10px;
+}
+
+.grab-users{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0;
+}
